@@ -1,0 +1,9 @@
+Display gallery to show latest data by ID or timestamp.
+
+First(Sort(
+    Filter(Log,
+    And(
+    Email=Upper(Office365Users.UserProfile(User().Email).Mail),
+    xx=Dropdown1.Selected.Index)),
+    ID,
+    Descending))
