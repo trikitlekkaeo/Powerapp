@@ -1,0 +1,10 @@
+Sort(
+    If(Dropdown2.Selected.Value="All" And Dropdown2_1.Selected.Value="All",Datasource,
+Dropdown2.Selected.Value="All" And Dropdown2_1.Selected.Value<>"All",
+Filter(Datasource,Column2=Dropdown2_1.Selected.Value),
+Dropdown2.Selected.Value<>"All" And Dropdown2_1.Selected.Value="All",
+Filter(Datasource,Column1=Dropdown2.Selected.Value),
+Dropdown2.Selected.Value<>"All" And Dropdown2_1.Selected.Value<>"All",
+Filter(Datasource,Column2=Dropdown2_1.Selected.Value And Column1=Dropdown2.Selected.Value)),
+Column to Sort,
+Ascending)
