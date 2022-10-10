@@ -1,0 +1,8 @@
+Go to view form
+Select(Parent);
+Navigate(Name Screen,ScreenTransition.CoverRight,{SelectID:Gallery2.Selected.Column})
+
+
+
+View/Edit Form
+LookUp(Datasource,Index=Gallery2.Selected.Index)
