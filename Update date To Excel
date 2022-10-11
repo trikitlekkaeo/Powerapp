@@ -1,1 +1,6 @@
+Default
+DateAdd(ThisItem.'Expire_Date_(เดือน_วัน_คศ)',0,Days)
+
+
+Update
 DateAdd(DatePicker2.SelectedDate,-TimeZoneOffset(),Minutes)
